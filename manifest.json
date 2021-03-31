@@ -1,0 +1,8 @@
+{
+  "short_name": "IFS CSS",
+  "name": "IFS CSS",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

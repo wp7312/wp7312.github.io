@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61d7b1b8.chunk.css",
+    "main.js": "/static/js/main.6ff77dda.chunk.js",
+    "main.js.map": "/static/js/main.6ff77dda.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f1e5470d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f1e5470d.js.map",
+    "static/js/2.8257ceb0.chunk.js": "/static/js/2.8257ceb0.chunk.js",
+    "static/js/2.8257ceb0.chunk.js.map": "/static/js/2.8257ceb0.chunk.js.map",
+    "static/js/3.f5078ddd.chunk.js": "/static/js/3.f5078ddd.chunk.js",
+    "static/js/3.f5078ddd.chunk.js.map": "/static/js/3.f5078ddd.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.61d7b1b8.chunk.css.map": "/static/css/main.61d7b1b8.chunk.css.map",
+    "static/js/2.8257ceb0.chunk.js.LICENSE.txt": "/static/js/2.8257ceb0.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/AvenirNextLTPro-Regular.94f2f163.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1e5470d.js",
+    "static/js/2.8257ceb0.chunk.js",
+    "static/css/main.61d7b1b8.chunk.css",
+    "static/js/main.6ff77dda.chunk.js"
+  ]
+}
