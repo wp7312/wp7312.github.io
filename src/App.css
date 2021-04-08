@@ -1,3 +1,7 @@
+@import "~@fortawesome/fontawesome-free/css/fontawesome.min.css";
+@import "~@fortawesome/fontawesome-free/css/brands.min.css";
+@import "~@fortawesome/fontawesome-free/css/solid.min.css";
+
 @font-face {
     font-family: "AvenirMedium";
     src: local("AvenirMedium"), url(./fonts/AvenirNextLTPro-Regular.otf) format("opentype");
