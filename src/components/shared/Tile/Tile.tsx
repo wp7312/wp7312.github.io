@@ -4,7 +4,7 @@ import React from 'react';
 export interface TileProps {
     title: string;
     icon?: string,
-    flexGrow: string,
+    size: number,
     backgroundColor: string,
     counters: JSX.Element
 }

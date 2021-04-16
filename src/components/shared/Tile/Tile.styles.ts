@@ -1,11 +1,24 @@
 import styled from 'styled-components'
 import { TileProps } from './Tile'
 import { Colors, IFSColor } from '../../../consts/colors';
+import {calculateFlexBasis} from '../style.utils'
 
 export const TileStyles = styled.div`
     box-sizing: border-box;
-    flex-basis: ${(props: TileProps) => props.flexGrow};
     color: ${Colors.mainBlue};
+    flex-grow: 1;
+    @media all and (min-width: 0px) and (max-width: 600px) {
+      flex-basis: ${(props: TileProps) => calculateFlexBasis(props.size, 6, 6)};
+    }
+    @media all and (min-width: 601px) and (max-width: 1200px) {
+      flex-basis: ${(props: TileProps) => calculateFlexBasis(props.size, 6, 3)};
+    }
+    @media all and (min-width: 1201px) and (max-width: 1700px) {
+      flex-basis: ${(props: TileProps) => calculateFlexBasis(props.size, 6, 2)};
+    }
+    @media all and (min-width: 1701px) {
+      flex-basis: ${(props: TileProps) => calculateFlexBasis(props.size, 6, 1)};
+    }
 `
 
 export const StyledDiv = styled.div`

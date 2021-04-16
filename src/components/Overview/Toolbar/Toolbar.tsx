@@ -1,36 +1,43 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Colors } from '../../../consts/colors'
 import { Button } from '../../shared/Button'
 
+const ToolbarWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+`;
+
 export const Toolbar = () => {
     return (
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <Button flexBasis={`${100 / 3}%`} value='Database: IFS Database' />
+        <ToolbarWrapper>
+            <Button size={2} value='Database: IFS Database' />
             <Button
-                flexBasis={`${100 / 6}%`}
+                size={1}
                 value='Database details'
                 backgroundColor={Colors.white}
                 color={Colors.mainBlue}
             />
             <Button
-                flexBasis={`${100 / 6}%`}
+                size={1}
                 value='Filters: Active variant'
                 backgroundColor={Colors.tileBlue1}
                 color={Colors.mainBlue}
             />
-            <Button flexBasis={`${100 / 6}%`} value='Apply filters' />
+            <Button size={1} value='Apply filters' />
             <Button
-                flexBasis={`${100 / 12}%`}
+                size={0.5}
                 value='Generate file'
                 backgroundColor={Colors.white}
                 color={Colors.mainBlue}
             />
             <Button
-                flexBasis={`${100 / 12}%`}
+                size={0.5}
                 value='View 11/11'
                 backgroundColor={Colors.disabled}
                 color={Colors.disabledText}
             />
-        </div>
+        </ToolbarWrapper>
     )
 }

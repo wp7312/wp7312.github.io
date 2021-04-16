@@ -1,6 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Tile } from '../../shared/Tile/Tile'
 import { Counter } from '../../shared/Tile/Counter/Counter';
+
+const InfoTilesWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+`;
 
 export const InfoTiles = () => {
     const systemCounter = <><Counter value={123} stat={45}/></>;
@@ -12,11 +20,11 @@ export const InfoTiles = () => {
         <Counter value={234} stat={567}/>
     </>
     return (
-        <div style={{display: 'flex', flexDirection: 'row', boxSizing: 'border-box'}}>
-            <Tile title={'SYSTEMS'} counters={systemCounter} icon={'cog'} flexGrow={`${100 / 6}%`} backgroundColor='#edf6fc'/>
-            <Tile title={'CONNECTIONS'} counters={connectionsCounter} icon={'handshake'} flexGrow={`${100 / 6}%`} backgroundColor='#e4f2fb'/>
-            <Tile title={'CALLS'} counters={callsCounter} icon={'tachometer-alt'} flexGrow={`${100 / 6}%`} backgroundColor='#dbeef9'/>
-            <Tile title={'DATA VOLUME'} counters={dataVolumeCounters} icon={'chart-pie'} flexGrow={`${100 / 2}%`} backgroundColor='#d2eaf8'/>
-        </div>
+        <InfoTilesWrapper>
+            <Tile title={'SYSTEMS'} counters={systemCounter} icon={'cog'} size={1} backgroundColor='#edf6fc'/>
+            <Tile title={'CONNECTIONS'} counters={connectionsCounter} icon={'handshake'} size={1} backgroundColor='#e4f2fb'/>
+            <Tile title={'CALLS'} counters={callsCounter} icon={'tachometer-alt'} size={1} backgroundColor='#dbeef9'/>
+            <Tile title={'DATA VOLUME'} counters={dataVolumeCounters} icon={'chart-pie'} size={3} backgroundColor='#d2eaf8'/>
+        </InfoTilesWrapper>
     )
 }
