@@ -21,10 +21,10 @@ export const InfoTiles = () => {
     </>
     return (
         <InfoTilesWrapper>
-            <Tile title={'SYSTEMS'} counters={systemCounter} icon={'cog'} size={1} backgroundColor='#edf6fc'/>
-            <Tile title={'CONNECTIONS'} counters={connectionsCounter} icon={'handshake'} size={1} backgroundColor='#e4f2fb'/>
-            <Tile title={'CALLS'} counters={callsCounter} icon={'tachometer-alt'} size={1} backgroundColor='#dbeef9'/>
-            <Tile title={'DATA VOLUME'} counters={dataVolumeCounters} icon={'chart-pie'} size={3} backgroundColor='#d2eaf8'/>
+            <Tile title={'SYSTEMS'} content={systemCounter} icon={'cog'} size={1} backgroundColor='#edf6fc'/>
+            <Tile title={'CONNECTIONS'} content={connectionsCounter} icon={'handshake'} size={1} backgroundColor='#e4f2fb'/>
+            <Tile title={'CALLS'} content={callsCounter} icon={'tachometer-alt'} size={1} backgroundColor='#dbeef9'/>
+            <Tile title={'DATA VOLUME'} content={dataVolumeCounters} icon={'chart-pie'} size={3} backgroundColor='#d2eaf8'/>
         </InfoTilesWrapper>
     )
 }

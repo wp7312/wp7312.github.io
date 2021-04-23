@@ -49,7 +49,7 @@ export const ToolsWrapper = styled.div`
   }
 `;
 
-export const CountersWrapper = styled.div`
+export const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `;

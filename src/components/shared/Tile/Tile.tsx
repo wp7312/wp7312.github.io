@@ -1,4 +1,4 @@
-import { TileStyles, StyledDiv, TitleWrapper, LabelWrapper, ToolsWrapper, CountersWrapper } from './Tile.styles';
+import { TileStyles, StyledDiv, TitleWrapper, LabelWrapper, ToolsWrapper, ContentWrapper } from './Tile.styles';
 import React from 'react';
 
 export interface TileProps {
@@ -6,7 +6,7 @@ export interface TileProps {
     icon?: string,
     size: number,
     backgroundColor: string,
-    counters: JSX.Element
+    content: JSX.Element
 }
 
 export const Tile = (props: TileProps) => {
@@ -25,9 +25,9 @@ export const Tile = (props: TileProps) => {
                         <i className="fas fa-times"/>
                     </ToolsWrapper>
                 </TitleWrapper>
-                <CountersWrapper>
-                    {props.counters}
-                </CountersWrapper>
+                <ContentWrapper>
+                    {props.content}
+                </ContentWrapper>
             </StyledDiv>
         </TileStyles>
     )
