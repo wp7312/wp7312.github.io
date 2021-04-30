@@ -6,7 +6,9 @@ export const Colors = {
     tileBlue3: '#dbeef9',
     tileBlue4: '#d2eaf8',
     disabled: '#ddddee',
-    disabledText: '#aaaaaa'
+    disabledText: '#aaaaaa',
+    deltaTitle: '#333333',
+    deltaPeriod: '#6D92BB'
 }
 
 export enum IFSColor {

@@ -14,7 +14,7 @@ export const DetailedChartTile = () => {
             title={"SYSTEM BY PERIOD"}
             content={content}
             backgroundColor={IFSColor.white}
-            size={1}
+            size={4}
         ></Tile>
     )
 }
