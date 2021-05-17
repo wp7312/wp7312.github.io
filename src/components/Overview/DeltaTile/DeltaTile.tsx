@@ -30,6 +30,6 @@ export const DeltaTile = () => {
             title={"DELTAS"}
             content={content}
             backgroundColor={IFSColor.white}
-            size={1}/>
+            size={2}/>
     )
 }

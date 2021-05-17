@@ -1,4 +1,4 @@
-import { TileStyles, StyledDiv, TitleWrapper, LabelWrapper, ToolsWrapper, ContentWrapper } from './Tile.styles';
+import { TileStyles, StyledDiv, TitleWrapper, LabelWrapper, ToolsWrapper, ContentWrapper, StyledMarginDiv } from './Tile.styles';
 import React from 'react';
 
 export interface TileProps {
@@ -14,6 +14,7 @@ export const Tile = (props: TileProps) => {
 
     return (
         <TileStyles {...props}>
+            <StyledMarginDiv>
             <StyledDiv {...props}>
                 <TitleWrapper>
                     <LabelWrapper>
@@ -29,6 +30,7 @@ export const Tile = (props: TileProps) => {
                     {props.content}
                 </ContentWrapper>
             </StyledDiv>
+            </StyledMarginDiv>
         </TileStyles>
     )
 }

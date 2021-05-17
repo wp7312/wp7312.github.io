@@ -11,7 +11,7 @@ export const DeltaStyles = styled.div`
 export const SummaryWrapper = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 `;
 
 export const TitlePeriodWrapper = styled.div`

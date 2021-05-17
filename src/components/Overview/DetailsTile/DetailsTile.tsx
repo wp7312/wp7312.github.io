@@ -5,6 +5,7 @@ import { DeltaTile } from '../DeltaTile/DeltaTile';
 
 const DetailsWrapper = styled.div`
     display: flex;
+    flex: 1;
 `;
 
 export const DetailsTile = () => {

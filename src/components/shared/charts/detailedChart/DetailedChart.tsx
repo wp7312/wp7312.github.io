@@ -69,7 +69,7 @@ export const DetailedChart = (props: DetailedChartProps) => {
         <Bar
             data={data}
             options={options}
-            height={100}
+            height={105}
             width={400}
         />
     )
