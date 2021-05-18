@@ -19,16 +19,19 @@ export const TileStyles = styled.div`
     @media all and (min-width: 1701px) {
       flex-basis: ${(props: TileProps) => calculateFlexBasis(props.size, 6, 1)};
     }
+    /* height: fit-content; */
 `;
 
 export const StyledMarginDiv = styled.div`
-    margin: 20px 10px 0 10px;
+    padding: 20px 10px 0 10px;
+    height: calc(100% - 20px);
 `;
 
 export const StyledDiv = styled.div`
     padding: 7px 10px 0 10px;
     background-color:${(props: TileProps) => props.backgroundColor};
     border: 1px solid #c7dbea;
+    height: calc(100% - 9px);
 `
 
 export const TitleWrapper = styled.div`
