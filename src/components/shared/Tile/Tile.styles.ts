@@ -19,7 +19,6 @@ export const TileStyles = styled.div`
     @media all and (min-width: 1701px) {
       flex-basis: ${(props: TileProps) => calculateFlexBasis(props.size, 6, 1)};
     }
-    /* height: fit-content; */
 `;
 
 export const StyledMarginDiv = styled.div`
