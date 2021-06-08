@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { TileProps } from './Tile'
+import { StyledDivProps, TileProps } from './Tile'
 import { Colors, IFSColor } from '../../../consts/colors';
 import {calculateFlexBasis} from '../style.utils'
 
@@ -28,9 +28,9 @@ export const StyledMarginDiv = styled.div`
 
 export const StyledDiv = styled.div`
     padding: 7px 10px 0 10px;
-    background-color:${(props: TileProps) => props.backgroundColor};
+    background-color:${(props: StyledDivProps) => props.backgroundColor};
     border: 1px solid #c7dbea;
-    height: calc(100% - 9px);
+    height: ${(props: StyledDivProps) => props.collapsed ? 'auto' : 'calc(100% - 9px)'}
 `
 
 export const TitleWrapper = styled.div`
@@ -57,4 +57,5 @@ export const ToolsWrapper = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  height: calc(100% - 40px);
 `;

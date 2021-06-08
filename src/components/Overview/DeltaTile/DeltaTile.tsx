@@ -7,7 +7,9 @@ import { IFSColor } from '../../../consts/colors';
 const DeltasWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+    height: 100%;
 `;
 
 export const DeltaTile = () => {
