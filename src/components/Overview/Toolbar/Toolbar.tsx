@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Colors } from '../../../consts/colors'
 import { Button } from '../../shared/Button'
+import { DatabaseButton } from './DatabaseButton/DatabaseButton';
 
 const ToolbarWrapper = styled.div`
     display: flex;
@@ -12,7 +13,7 @@ const ToolbarWrapper = styled.div`
 export const Toolbar = () => {
     return (
         <ToolbarWrapper>
-            <Button size={2} value='Database: IFS Database' />
+            <DatabaseButton />
             <Button
                 size={1}
                 value='Database details'

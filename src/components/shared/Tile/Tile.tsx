@@ -7,8 +7,8 @@ import { RootState } from '../../../store/reducers/reducers';
 export interface TileProps {
     title: string;
     icon?: string,
-    size: number,
-    backgroundColor: string,
+    size?: number,
+    backgroundColor?: string,
     content: JSX.Element
 }
 
@@ -30,9 +30,9 @@ export const Tile = (props: TileProps) => {
         <>
             {
                 !closed &&
-                <TileStyles {...props}>
+                <TileStyles size={1} {...props}>
                     <StyledMarginDiv>
-                        <StyledDiv {...{...props, collapsed: collapsed}}>
+                        <StyledDiv backgroundColor={'white'} {...{...props, collapsed: collapsed}}>
                             <TitleWrapper>
                                 <LabelWrapper>
                                     {props.title}

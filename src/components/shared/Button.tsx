@@ -1,22 +1,24 @@
-import styled from 'styled-components'
-import { calculateFlexBasis } from './style.utils'
+import React from 'react';
+import styled, { css } from 'styled-components';
+import { calculateFlexBasis } from './style.utils';
 
 export interface ButtonProps {
     size: number;
     value: string;
     color?: string;
     backgroundColor?: string;
-}
+    onClick?: () => void;
+} 
 
-export const Button = (props: ButtonProps) => {
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
     return (
         <StyledDiv {...props} >
-            <StyledButton {...props} >
+            <StyledButton ref={ref} {...props} >
                 {props.value}
             </StyledButton>
         </StyledDiv>
     )
-}
+});
 
 export const DisabledDiv = styled.div`
     position: absolute;
@@ -30,6 +32,7 @@ export const StyledDiv = styled.div`
     box-sizing: border-box;
     display: flex;
     overflow: hidden;
+    ${({backgroundColor}) => backgroundColor && css`background-color: ${backgroundColor}`}
     @media all and (min-width: 0px) and (max-width: 600px) {
       flex-basis: ${(props: ButtonProps) => calculateFlexBasis(props.size, 6, 6)};
     }
